@@ -232,5 +232,21 @@ h1 {
   .controls {
     align-self: center;
   }
+
+  #slide1:checked~.wrapper .slider-text-mobile {
+    transform: translate(-40vw, 0);
+  }
+  
+  #slide2:checked~.wrapper .slider-text-mobile {
+    transform: translate(calc(-2 * 40vw - 80vw), 0);
+  }
+  
+  #slide3:checked~.wrapper .slider-text-mobile {
+    transform: translate(calc(-3 * 40vw - 80vw * 2), 0);
+  }
+  
+  #slide4:checked~.wrapper .slider-text-mobile {
+    transform: translate(calc(-4 * 40vw - 80vw * 3), 0);
+  }
 }
 
