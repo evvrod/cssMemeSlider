@@ -124,36 +124,35 @@ h1 {
   cursor: pointer;
 }
 
-.controls label {
+.controls .circle {
   height: 1rem;
   width: 1rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   background-color: rgb(7, 153, 205);
   border: 0.2rem rgba(7, 153, 205, 1) solid;
   border-radius: 2rem;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
-.controls .wrapper-label:hover label {
+.controls .wrapper-label:hover .circle {
   background-color: rgba(255, 255, 255, 1);
   border: 0.2rem rgba(255, 255, 255, 1) solid;
 }
 
-#slide1:checked~.wrapper .wrapper-label:nth-of-type(1) label,
-#slide2:checked~.wrapper .wrapper-label:nth-of-type(2) label,
-#slide3:checked~.wrapper .wrapper-label:nth-of-type(3) label,
-#slide4:checked~.wrapper .wrapper-label:nth-of-type(4) label {
+#slide1:checked~.wrapper .wrapper-label:nth-of-type(1) .circle,
+#slide2:checked~.wrapper .wrapper-label:nth-of-type(2) .circle,
+#slide3:checked~.wrapper .wrapper-label:nth-of-type(3) .circle,
+#slide4:checked~.wrapper .wrapper-label:nth-of-type(4) .circle {
   background-color: rgba(24, 24, 188, 0);
   border: 0.2rem rgba(7, 153, 205, 1) solid;
 }
 
-#slide1:checked~.wrapper .wrapper-label:nth-of-type(1):hover label,
-#slide2:checked~.wrapper .wrapper-label:nth-of-type(2):hover label,
-#slide3:checked~.wrapper .wrapper-label:nth-of-type(3):hover label,
-#slide4:checked~.wrapper .wrapper-label:nth-of-type(4):hover label{
+#slide1:checked~.wrapper .wrapper-label:nth-of-type(1):hover .circle,
+#slide2:checked~.wrapper .wrapper-label:nth-of-type(2):hover .circle,
+#slide3:checked~.wrapper .wrapper-label:nth-of-type(3):hover .circle,
+#slide4:checked~.wrapper .wrapper-label:nth-of-type(4):hover .circle{
   border: 0.2rem #ffffff solid;
 }
-
 
 #slide1:checked~.wrapper .slider-img {
   transform: translate(-50vw, 0);
