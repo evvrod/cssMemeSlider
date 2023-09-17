@@ -193,18 +193,44 @@ h1 {
     display: block;
   }
 
-  .mobile {
+  .wrapper-slider-text-mobile {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .mobile {
-    display: block;
+  .wrapper-slider-text-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
   }
 
   .desktop {
     display: none;
+  }
+
+  .wrapper-slider-text-mobile {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider-text-mobile {
+    display: flex;
+    justify-content: space-evenly;
+    width: calc(5 * 40vw + 4 * 80vw);
+    transition: all 1s ease-in-out;
+  }
+
+  .slider-text-mobile>div {
+    width: calc(80vw);
+    color: #ffffff;
+    font-size: 2rem;
+  }
+
+  .controls {
+    align-self: center;
   }
 }
 
