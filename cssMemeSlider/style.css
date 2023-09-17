@@ -92,7 +92,6 @@ h1 {
 }
 
 .wrapper-slider-text {
-  display: inline-block;
   width: 75%;
   overflow: hidden;
 }
@@ -122,6 +121,7 @@ h1 {
 
   height: 2rem;
   width: 2rem;
+  cursor: pointer;
 }
 
 .controls label {
