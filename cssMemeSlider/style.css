@@ -187,3 +187,24 @@ h1 {
 #slide4:checked~.wrapper .slider-text {
   transform: translate(calc(-4 * 40vw - 80vw * 0.75 * 3), 0);
 }
+
+@media (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
